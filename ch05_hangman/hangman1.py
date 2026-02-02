@@ -16,14 +16,23 @@ word_list= ['apple' , 'banana','camel']
 # 하나의 문자와 일치하는지를 확인할 수 있도록 반복 - 조건문을 작성하고
 # 맞으면 정담 / 틀리면 오답
 
-choosen_word = random.choice(word_list)
+chosen_word = random.choice(word_list)
 
-print(choosen_word)
+print(f'테스트 단어 : {chosen_word}')
+
 guess =input('알파벳을 입력하세요 >>> ').lower()
 
-
-for letter in choosen_word:
+# str 데이터에서 반복문 돌리문 문자 하나짜리씩 나옵니다.
+for letter in chosen_word:  # camel이라면 c, a
     if guess == letter :
         print(f'{guess} 정답')
     else :
         print('오답')
+
+# 일반 for문
+for i in range(len(chosen_word)) :
+    if chosen_word[i] == guess :
+        print('2: 정답')
+    else:
+        print('2: 오답')
+
