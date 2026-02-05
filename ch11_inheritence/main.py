@@ -176,6 +176,9 @@ class Shape:
     def draw(self):
         print(self.name)
 
+    def area(self): # 로직은 없지만 해두게 되면 자식 클래스들이 동일한 메서드를 override 할수 있음
+        pass
+
 class Circle(Shape):
     def __init__(self, name, radius):
         super().__init__(name)
