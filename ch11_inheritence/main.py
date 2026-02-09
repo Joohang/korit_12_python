@@ -209,3 +209,4 @@ print(f'원의 넓이 : {circle.area()}')
 rectangle = Rectangle('직사각형1',10,8)
 rectangle.draw()
 print(f'직사각형의 넓이 : {rectangle.area()}')
+
